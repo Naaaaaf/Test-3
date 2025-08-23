@@ -18,7 +18,6 @@ body, html {
   margin-top: 33vh; /* about 1/3 down from the top */
   text-align: center;
   color: white;
-  background-image: url('note.png');
   background-color: rgba(0, 0, 0, 0.4); /* optional: darken background behind text */
   padding: 20px;
   border-radius: 12px;
