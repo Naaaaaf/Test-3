@@ -4,7 +4,7 @@ body, html {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-image: url('your-image.jpg'); /* replace with your own image */
+  background-image: url('jar-background.jpg'); /* replace with your own image */
   background-size: cover;
   background-position: center;
   font-family: sans-serif;
