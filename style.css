@@ -1,0 +1,47 @@
+/* Make the background fill the whole screen */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('your-image.jpg'); /* replace with your own image */
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Container that holds the button and note */
+#content {
+  margin-top: 33vh; /* about 1/3 down from the top */
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4); /* optional: darken background behind text */
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Style the button */
+#pick-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff69b4;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+
+#pick-btn:hover {
+  background-color: #ff85c1;
+}
+
+/* Style for the reason/note */
+#note-container {
+  margin-top: 20px;
+  font-size: 20px;
+}
