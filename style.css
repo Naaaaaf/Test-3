@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   text-align: center;
-  background: url("background.jpg") no-repeat center center fixed;
+  background: url("jar-background.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
 }
