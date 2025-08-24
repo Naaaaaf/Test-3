@@ -40,7 +40,7 @@ async function loadReasons() {
 // Pick random reason
 function pickReason() {
   if (reasons.length === 0) {
-    alert("No reasons found in Firebase!");
+    alert("Come back later! ;)");
     return;
   }
 
