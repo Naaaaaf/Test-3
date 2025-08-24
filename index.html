@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <h1>Reasons Why</h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reasons Why</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Firebase -->
+  <script type="module" src="script.js" defer></script>
 </head>
 <body>
-  <section id="top">
+  <header>
     <h1>Reasons Why</h1>
-    <button id="pickReason">Pick a Reason</button>
+  </header>
 
-    <!-- Unfolding Paper -->
-    <div id="paper" class="hidden">
-      <div id="reasonText"></div>
+  <!-- Pick a Reason Section -->
+  <main>
+    <button id="pickBtn">Pick a Reason</button>
+
+    <!-- Animated Paper -->
+    <div id="paper">
+      <div id="paper-text"></div>
     </div>
-  </section>
+  </main>
 
-  <section id="board">
+  <!-- Blackboard Section -->
+  <section id="blackboard">
     <h2>Pinned Reasons</h2>
-    <div id="pinnedContainer"></div>
+    <div id="pinnedBoard"></div>
   </section>
-
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
