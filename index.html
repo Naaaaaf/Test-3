@@ -5,28 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reasons Why</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Firebase -->
-  <script type="module" src="script.js" defer></script>
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>Reasons Why</h1>
-  </header>
-
-  <!-- Pick a Reason Section -->
-  <main>
-    <button id="pickBtn">Pick a Reason :3</button>
-
-    <!-- Animated Paper -->
-    <div id="paper">
-      <div id="paper-text"></div>
+    <button id="pickReason">Pick a Reason</button>
+    <div class="note hidden" id="note">
+      <p id="reasonText"></p>
     </div>
-  </main>
+  </div>
 
-  <!-- Blackboard Section -->
-  <section id="blackboard">
-    <h2><3</h2>
-    <div id="pinnedBoard"></div>
-  </section>
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    // Your Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyDuNIDwSpNLTQb9fYSzSLnMBsc5v-Cm2G4",
+      authDomain: "reasons-try-1-with-fb.firebaseapp.com",
+      projectId: "reasons-try-1-with-fb",
+      storageBucket: "reasons-try-1-with-fb.firebasestorage.app",
+      messagingSenderId: "516625580067",
+      appId: "1:516625580067:web:54db48d0cbbe3e923a7196",
+      measurementId: "G-BS9XQE7PF2",
+      databaseURL: "https://reasons-try-1-with-fb-default-rtdb.firebaseio.com/"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Expose db globally for script.js
+    window.db = db;
+  </script>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
