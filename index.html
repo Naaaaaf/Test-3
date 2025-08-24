@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Reasons Why I</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Reasons Why</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="content">
-    <button id="pick-btn">Pick a Reasonnnn :3</button>
-    <div id="note-container"></div>
-  </div>
+  <section id="top">
+    <h1>Reasons Why</h1>
+    <button id="pickReason">Pick a Reason</button>
 
+    <!-- Unfolding Paper -->
+    <div id="paper" class="hidden">
+      <p id="reasonText"></p>
+    </div>
+  </section>
+
+  <section id="board">
+    <h2>Pinned Reasons</h2>
+    <div id="pinnedContainer"></div>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
